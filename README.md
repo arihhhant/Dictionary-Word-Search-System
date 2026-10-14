@@ -1,63 +1,53 @@
-Dictionary / Word Search System Using Binary Search Tree (BST)
+DSA-project
 
-Introduction
+Dictionary / Word Search System
 
-The Dictionary / Word Search System is a menu-driven application developed in C using the Binary Search Tree (BST) data structure. It allows users to add words with their meanings, search for words, and display all stored words in alphabetical order.
+About the Project
+
+The Dictionary / Word Search System is a console-based application developed in C using the Binary Search Tree (BST) data structure. It allows users to add words with their meanings, search for words efficiently, and display all stored words in alphabetical order.
 
 Objectives
 
-- Store words and meanings.
-- Search words quickly using BST.
-- Display words alphabetically.
-- Learn the implementation of Binary Search Trees.
+- To store words and their meanings.
+- To search words efficiently using BST.
+- To display words in alphabetical order.
+- To understand the practical implementation of Binary Search Trees.
+
+Technologies Used
+
+- C Programming
+- Binary Search Tree (BST)
 
 Features
 
-- Add a new word.
+- Add new words with meanings.
 - Search for a word.
-- Display all words.
-- Simple menu-driven interface.
+- Display all stored words alphabetically.
+- Menu-driven interface.
+- Efficient searching using BST.
 
-Software Requirements
+Project Structure
 
-- Language: C
-- Compiler: GCC / CodeBlocks / Turbo C / VS Code
-- Operating System: Windows or Linux
+DSA-project/
+│
+├── dictionary.c
+├── README.md
 
-Data Structure Used
+How to Run the Project
 
-Binary Search Tree (BST):
-A BST stores data in sorted order. Words smaller than the parent are stored on the left, while larger words are stored on the right, making searching and insertion efficient.
+1. Download or clone this repository.
+2. Open the project in any C compiler (CodeBlocks, VS Code, Dev-C++, Turbo C, etc.).
+3. Compile the "dictionary.c" file.
+4. Run the program and use the menu to add, search, and display words.
 
-Algorithm
+Future Improvements
 
-1. Start the program.
-2. Display the menu.
-3. If Add is selected, insert the word and meaning into the BST.
-4. If Search is selected, search the word and display its meaning.
-5. If Display is selected, show all words using Inorder Traversal.
-6. Exit the program.
-
-Advantages
-
-- Fast searching.
-- Alphabetical display of words.
-- Easy to implement.
-- Efficient data organization.
-
-Limitations
-
-- No delete or update option.
-- Case-sensitive search.
-- Data is not saved permanently.
-
-Applications
-
-- Digital Dictionary
-- Educational Software
-- Vocabulary Learning
-- Word Search Systems
+- Add delete and update operations.
+- Save dictionary data in a file.
+- Implement case-insensitive searching.
+- Develop a graphical user interface (GUI).
+- Add auto-suggestions for words.
 
 Conclusion
 
-This project demonstrates the use of Binary Search Tree in C for building a simple dictionary. It provides efficient insertion, searching, and alphabetical display of words while helping understand the practical use of data structures.
+The Dictionary / Word Search System demonstrates the implementation of a Binary Search Tree in C. It provides efficient insertion, searching, and alphabetical display of words while helping users understand the practical application of data structures.
