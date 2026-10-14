@@ -1,53 +1,50 @@
-DSA-project
+# DSA-project
+# Dictionary / Word Search System
 
-Dictionary / Word Search System
+## About the Project
+The Dictionary / Word Search System is a console-based project developed in **C** using the **Binary Search Tree (BST)** data structure.
 
-About the Project
+It allows users to add words with their meanings, search for stored words, and display all words in alphabetical order through a simple menu-driven interface.
 
-The Dictionary / Word Search System is a console-based application developed in C using the Binary Search Tree (BST) data structure. It allows users to add words with their meanings, search for words efficiently, and display all stored words in alphabetical order.
-
-Objectives
-
+## Objectives
 - To store words and their meanings.
 - To search words efficiently using BST.
 - To display words in alphabetical order.
 - To understand the practical implementation of Binary Search Trees.
 
-Technologies Used
-
+## Technologies Used
 - C Programming
 - Binary Search Tree (BST)
 
-Features
-
+## Features
 - Add new words with meanings.
-- Search for a word.
-- Display all stored words alphabetically.
+- Search for a stored word.
+- Display all words alphabetically.
 - Menu-driven interface.
-- Efficient searching using BST.
+- Fast searching using BST.
 
-Project Structure
+*Note: This is a basic implementation and can be extended with more advanced features.*
 
-DSA-project/
-│
-├── dictionary.c
-├── README.md
+## Project Structure
 
-How to Run the Project
+DSA-project-/
+|
+|-- dictionary.c
+|-- README.md
+
+## How to Run the Project
 
 1. Download or clone this repository.
-2. Open the project in any C compiler (CodeBlocks, VS Code, Dev-C++, Turbo C, etc.).
-3. Compile the "dictionary.c" file.
-4. Run the program and use the menu to add, search, and display words.
+2. Open the project folder.
+3. Compile `dictionary.c` using any C compiler.
+4. Run the program and use the menu options.
 
-Future Improvements
-
-- Add delete and update operations.
-- Save dictionary data in a file.
+## Future Improvements
+- Add update and delete operations.
+- Store data permanently using file handling.
 - Implement case-insensitive searching.
-- Develop a graphical user interface (GUI).
 - Add auto-suggestions for words.
+- Develop a graphical user interface (GUI).
 
-Conclusion
-
-The Dictionary / Word Search System demonstrates the implementation of a Binary Search Tree in C. It provides efficient insertion, searching, and alphabetical display of words while helping users understand the practical application of data structures.
+## Conclusion
+This project demonstrates the implementation of a **Binary Search Tree (BST)** in **C** for building a simple dictionary. It provides efficient insertion, searching, and alphabetical display of words while improving the understanding of tree-based data structures.
