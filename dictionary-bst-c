@@ -1,0 +1,59 @@
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+struct Node {
+char w[20], m[100];
+struct Node *l, *r;
+};
+
+struct Node* insert(struct Node* root, char* w, char* m) {
+if (!root) {
+struct Node* n = (struct Node*)malloc(sizeof(struct Node));
+strcpy(n->w, w); strcpy(n->m, m);
+n->l = n->r = NULL;
+return n;
+}
+if (strcmp(w, root->w) < 0) root->l = insert(root->l, w, m);
+else if (strcmp(w, root->w) > 0) root->r = insert(root->r, w, m);
+return root;
+}
+
+struct Node* search(struct Node* root, char* w) {
+if (!root || strcmp(root->w, w) == 0) return root;
+return (strcmp(w, root->w) < 0) ? search(root->l, w) : search(root->r, w);
+}
+
+void display(struct Node* root) {
+if (root) {
+display(root->l);
+printf("\n%s: %s", root->w, root->m);
+display(root->r);
+}
+}
+
+int main() {
+struct Node* root = NULL;
+int ch;
+char w[20], m[100];
+
+do {
+printf("\n1.Add 2.Search 3.Display 4.Exit\nEnter choice: ");
+scanf("%d", &ch);
+
+if (ch == 1) {
+printf("Word: "); scanf("%s", w);
+printf("Meaning: "); scanf(" %[^\n]", m);
+root = insert(root, w, m);
+} else if (ch == 2) {
+printf("Search: "); scanf("%s", w);
+struct Node* res = search(root, w);
+printf(res ? "Meaning: %s" : "Not found", res ? res->m : "");
+} else if (ch == 3) {
+display(root);
+}
+
+} while (ch != 4);
+return 0;
+
+}
